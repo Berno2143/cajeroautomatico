@@ -44,8 +44,8 @@ function entregarDinero()
      resultado.innerHTML = "Debe retirar multiplos de 5 pesos";
      return false;
    }
-   if (dinero > 600){
-     resultado.innerHTML = "El monto maximo de retiro es de 600 pesos";
+   if (dinero > 500){
+     resultado.innerHTML = "El monto maximo de retiro es de 500 pesos";
      return false;
    }
   resultado.innerHTML = "";
@@ -77,11 +77,6 @@ function entregarDinero()
 }
 var caja = [];
 var imagenes = [];
-imagenes["cinco"] = "cinco.jpg";
-imagenes["diez"] = "diez.jpg";
-imagenes["veinte"] = "veinte.jpg";
-imagenes["cincuenta"]="cincuenta.jpg";
-imagenes["cien"]="cien.jpg";
 caja.push( new Billete(100, 20) );
 caja.push( new Billete(50, 15) );
 caja.push( new Billete(20, 20) );
